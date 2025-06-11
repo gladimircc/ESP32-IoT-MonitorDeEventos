@@ -1,10 +1,7 @@
 # ESP32-IoT-MonitorDeEventos
 Projeto didático de IoT - Internet das Coisas que utiliza um ESP32 para capturar cliques de um botão, envia os dados para um servidor Node.js (Express) e exibe a contagem em uma página web que se atualiza em tempo real.
 
-![Banner do Projeto](https'://i.imgur.com/8lZ5e9V.png)
-
 ## 🎯 Objetivo do Projeto
-
 [cite_start]Este projeto demonstra um sistema de Internet das Coisas (IoT) completo e simples para monitorar um evento físico (o clique de um botão) e exibir a contagem total em tempo real através de uma página web. 
 
 [cite_start]A arquitetura utilizada (Dispositivo → Servidor → Interface) serve como um modelo fundamental para inúmeros outros projetos de IoT. 
