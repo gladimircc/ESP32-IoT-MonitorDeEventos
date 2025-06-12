@@ -2,12 +2,14 @@
 Projeto didático de IoT - Internet das Coisas que utiliza um ESP32 para capturar cliques de um botão, envia os dados para um servidor Node.js (Express) e exibe a contagem em uma página web que se atualiza em tempo real.
 
 ## 🎯 Objetivo do Projeto
-[cite_start]Este projeto demonstra um sistema de Internet das Coisas (IoT) simples para monitorar um evento físico (o clique de um botão) e exibir a contagem total em tempo real através de uma página web. 
+Este projeto demonstra um sistema de Internet das Coisas (IoT) simples para monitorar um evento físico (o clique de um botão) e exibir a contagem total em tempo real através de uma página web. 
 
-[cite_start]A arquitetura utilizada (Dispositivo → Servidor → Interface) serve como um modelo para outros projetos de IoT. 
+A arquitetura utilizada (Dispositivo → Servidor → Interface) serve como um modelo para outros projetos de IoT. 
 
+## Diagrama
 ![Diagrama](https://github.com/gladimircc/ESP32-IoT-MonitorDeEventos/blob/main/Diagrama.png)
 
+## Circuito
 ![Circuito](https://github.com/gladimircc/ESP32-IoT-MonitorDeEventos/blob/main/circuito.png)
 
 ---
@@ -15,13 +17,13 @@ Projeto didático de IoT - Internet das Coisas que utiliza um ESP32 para captura
 ## 🛠️ Componentes Utilizados
 
 ### Hardware
-* [cite_start]🧠 **ESP32-C3:** Microcontrolador responsável por ler o estado do botão, conecta-se ao Wi-Fi e se comunica com nosso servidor. 
-* [cite_start]👆 **Botão (Push-button):** Atua como o gatilho para o evento físico que será contado. 
-* [cite_start]💡 **LED:** Fornece um feedback visual ao usuário, confirmando que o clique foi registrado e enviado. 
+🧠 **ESP32-C3:** Microcontrolador responsável por ler o estado do botão, conecta-se ao Wi-Fi e se comunica com nosso servidor. 
+👆 **Botão (Push-button):** Atua como o gatilho para o evento físico que será contado. 
+💡 **LED:** Fornece um feedback visual ao usuário, confirmando que o clique foi registrado e enviado. 
 
 ### Software
-* ⚙️ **Backend (Servidor):** Um servidor simples criado com **Node.js** e a biblioteca **Express**. [cite_start]Suas responsabilidades são receber os sinais do ESP32, guardar a contagem em um arquivo (`contador.txt`) e fornecer os dados para a interface web. 
-* [cite_start]🖥️ **Frontend (Página Web):** Uma página **HTML** com **JavaScript** que busca os dados do servidor periodicamente e atualiza a contagem na tela do usuário em tempo real, sem a necessidade de recarregar a página. 
+⚙️ **Backend (Servidor):** Um servidor simples criado com **Node.js** e a biblioteca **Express**. [cite_start]Suas responsabilidades são receber os sinais do ESP32, guardar a contagem em um arquivo (`contador.txt`) e fornecer os dados para a interface web. 
+🖥️ **Frontend (Página Web):** Uma página **HTML** com **JavaScript** que busca os dados do servidor periodicamente e atualiza a contagem na tela do usuário em tempo real, sem a necessidade de recarregar a página. 
 
 ---
 
@@ -65,6 +67,6 @@ Projeto didático de IoT - Internet das Coisas que utiliza um ESP32 para captura
 
 ## 💡 Possíveis Melhorias e Expansões
 Este projeto é um ponto de partida. Algumas ideias para expandi-lo:
-* [cite_start]**Trocar o Gatilho:** Use sensores de presença (PIR), magnéticos ou de umidade para contar outros tipos de eventos. 
-* [cite_start]**Melhorar a Persistência:** Substitua o arquivo `contador.txt` por um banco de dados real como o Firebase ou MySQL para gerar gráficos e históricos. 
-* [cite_start]**Adicionar Notificações:** Faça o servidor enviar um e-mail, uma mensagem no Telegram ou uma notificação push quando um evento ocorrer.
+**Trocar o Gatilho:** Use sensores de presença (PIR), magnéticos ou de umidade para contar outros tipos de eventos. 
+**Melhorar a Persistência:** Substitua o arquivo `contador.txt` por um banco de dados real como o Firebase ou MySQL para gerar gráficos e históricos. 
+**Adicionar Notificações:** Faça o servidor enviar um e-mail, uma mensagem no Telegram ou uma notificação push quando um evento ocorrer.
