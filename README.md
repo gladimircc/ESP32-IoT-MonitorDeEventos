@@ -67,6 +67,6 @@ A arquitetura utilizada (Dispositivo → Servidor → Interface) serve como um m
 
 ## 💡 Possíveis Melhorias e Expansões
 Este projeto é um ponto de partida. Algumas ideias para expandi-lo:
-**Trocar o Gatilho:** Use sensores de presença (PIR), magnéticos ou de umidade para contar outros tipos de eventos. 
-**Melhorar a Persistência:** Substitua o arquivo `contador.txt` por um banco de dados real como o Firebase ou MySQL para gerar gráficos e históricos. 
-**Adicionar Notificações:** Faça o servidor enviar um e-mail, uma mensagem no Telegram ou uma notificação push quando um evento ocorrer.
+* **Trocar o Gatilho:** Use sensores de presença (PIR), magnéticos ou de umidade para contar outros tipos de eventos.
+* **Melhorar a Persistência:** Substitua o arquivo `contador.txt` por um banco de dados real como o Firebase ou MySQL para gerar gráficos e históricos. 
+* **Adicionar Notificações:** Faça o servidor enviar um e-mail, uma mensagem no Telegram ou uma notificação push quando um evento ocorrer.
