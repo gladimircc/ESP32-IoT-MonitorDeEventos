@@ -2,41 +2,10 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Contador do botão - ESP32</title>
-  <style>
-    body {
-      font-family: monospace;
-      background-color: #000;
-      color: #33ff33;
-      text-align: center;
-      padding-top: 50px;
-    }
-    h1 {
-      color: #66ff66;
-    }
-    #contador {
-      font-size: 3em;
-    }
-  </style>
+  <title>Teste de Página</title>
 </head>
 <body>
-  <h1>Contador de Cliques do ESP32</h1>
-  <p>O botão foi pressionado:</p>
-  <div id="contador">--</div>
-  <p>vezes.</p>
-
-  <script>
-async function atualizarContador() {
-  try {
-    const response = await fetch("/contador?" + new Date().getTime());
-    const valor = await response.text();
-    document.getElementById("contador").textContent = valor;
-  } catch (e) {
-    document.getElementById("contador").textContent = "Erro";
-  }
-}
-    atualizarContador();
-    setInterval(atualizarContador, 3000);
-  </script>
+  <h1>Esta é uma página de teste.</h1>
+  <p>Se você consegue ver este texto, a página está sendo renderizada corretamente.</p>
 </body>
 </html>
