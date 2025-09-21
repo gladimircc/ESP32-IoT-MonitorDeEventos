@@ -664,15 +664,15 @@ function iniciarMqtt() {
                     
                     if (data.button !== undefined) {
                         const botaoPressionado = data.button === 1;
-                        statusBotao.textContent = botaoPressionado ? 'Pressionado' : 'Liberado';
+                        statusBotao.textContent = botaoPressionado ? 'LOW' : 'HIGH';
                         statusBotao.className = botaoPressionado ? 'status-value online' : 'status-value offline';
                         
                         if (botaoPressionado) {
                             visualBotao.classList.add('pressed');
-                            adicionarEntradaLog(`🔘 [${timestamp}] BOTÃO PRESSIONADO - ESP32 Uptime: ${data.uptime}s`);
+                            adicionarEntradaLog(`🔘 [${timestamp}] BOTÃO LOW - ESP32 Uptime: ${data.uptime}s`);
                         } else {
                             visualBotao.classList.remove('pressed');
-                            adicionarEntradaLog(`⚪ [${timestamp}] BOTÃO LIBERADO - ESP32 Uptime: ${data.uptime}s`);
+                            adicionarEntradaLog(`⚪ [${timestamp}] BOTÃO HIGH - ESP32 Uptime: ${data.uptime}s`);
                         }
                     }
                     
@@ -750,3 +750,4 @@ function iniciarMqtt() {
     </script>
 </body>
 </html>
+
